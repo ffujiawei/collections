@@ -7,10 +7,14 @@ import os
 
 mirrors = '''\
 [global]
-timeout = 60
-index-url = https://mirrors.ustc.edu.cn/pypi/web/simple/
-extra-index-url = https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple/\
+index-url=http://mirrors.aliyun.com/pypi/simple/
+
+[install]
+trusted-host=mirrors.aliyun.com
 '''
+
+# index-url = https://mirrors.ustc.edu.cn/pypi/web/simple/
+# extra-index-url = https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple/\
 
 user = os.path.expanduser('~')
 if sys.platform == 'win32':
